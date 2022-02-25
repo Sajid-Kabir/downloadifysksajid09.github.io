@@ -1,0 +1,323 @@
+<!DOCTYPE html>    
+  <html dir='ltr' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>    
+  <head>    
+  <title>Twitter Downloader - Download Twitter videos for free!</title>    
+  <meta content='We offer the fastest way to save Twitter videos in mp3, mp4, or in other range of formats. ✅ It’s the most convenient Twitter video downloader you’ve ever tried!' name='Description'/>    
+  <meta content='index, follow' name='robots'/>    
+  <meta content='2 days' name='revisit-after'/>    
+  <meta content='English' name='language'/>    
+  <meta content='INDIA' name='geo.country'/>    
+  <meta content='BIHAR' name='geo.placename'/>    
+  <meta content='global' name='distribution'/>    
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>    
+  <meta content='true' name='MSSmartTagsPreventParsing'/>    
+  <meta content='general' name='rating'/>        
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>    
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
+  <style id='page-skin-1' type='text/css'><!--    
+  /*    
+  -----------------------------------------------------------------------------------    
+	Template Disign By Technical Arp Visit: www.Technicalarp.com 
+  ----------------------------------------------------------------------------------- */    
+  #navbar-iframe {    
+  height:0px;    
+  visibility:hidden;    
+  display: none !important;    
+  }    
+  html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {    
+  margin: 0;    
+  padding: 0;    
+  border: 0;    
+  font-size: 100%;    
+  font: inherit;    
+  vertical-align: baseline;    
+  }    
+  article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {    
+  display: block;    
+  }    
+  html {    
+  background:#eeeeee;    
+  text-align:center;    
+  line-height: 1;    
+  font-family: Georgia;    
+  }    
+  ol, ul {    
+  list-style: none;    
+  }    
+  blockquote, q {    
+  quotes: none;    
+  }    
+  blockquote:before, blockquote:after, q:before, q:after {    
+  content: '';    
+  content: none;    
+  }    
+  table {    
+  border-collapse: collapse;    
+  border-spacing: 0;    
+  }    
+  *:focus {    
+  outline: 0;    
+  }    
+  #hd {    
+  width:100%;    
+  height:390px;    
+  background-image: linear-gradient(to right, #0970eb, #008fef, #00a4d8, #00b3b6, #52be9a);    
+  margin:0 0 50px 0;    
+  -moz-box-shadow: inset 0 -4px 10px -5px #000;    
+  -webkit-box-shadow: inset 0 -4px 10px -5px #000;    
+  box-shadow: inset 0 -4px 10px -5px #000;    
+  }    
+  h1 {    
+  font-size:24px;    
+  font-weight:bold;    
+  color:#fff;    
+  text-shadow: 1px 1px 1px #666666;    
+  }    
+  #hd p{    
+  max-width:70%;    
+  margin:20px auto;    
+  padding:10px;    
+  background:#2A78C3;    
+  border: dashed #00C0C7 2px;    
+  font-family:arial;    
+  font-size:17px;    
+  font-weight:bold;    
+  line-height: 1.4;    
+  color:#FFFFFF;    
+  }    
+  #hd p span{    
+  color:#FFFF00;    
+  }    
+  input[type="text"]{    
+  width:400px;    
+  height:70px;    
+  padding:0 0 0 10px;    
+  border: dashed #1a1a1a 2px;    
+  font-family: Georgia;    
+  }    
+  input[type="submit"]{    
+  height:72px;    
+  background: #66bdff;    
+  background-image: -webkit-linear-gradient(top, #66bdff, #0d9eff);    
+  background-image: -moz-linear-gradient(top, #66bdff, #0d9eff);    
+  background-image: -ms-linear-gradient(top, #66bdff, #0d9eff);    
+  background-image: -o-linear-gradient(top, #66bdff, #0d9eff);    
+  background-image: linear-gradient(to bottom, #66bdff, #0d9eff);    
+  border: dashed #1a1a1a 1px;    
+  -webkit-border-radius: 0;    
+  -moz-border-radius: 0;    
+  border-radius: 0px;    
+  margin:0 0 0 -2px;    
+  cursor: pointer;    
+  font-family: Georgia;    
+  text-decoration: none;    
+  color: #fff;    
+  }    
+  input[type="submit"]:hover {    
+  background: #f72525;    
+  background-image: -webkit-linear-gradient(top, #f72525, #b52222);    
+  background-image: -moz-linear-gradient(top, #f72525, #b52222);    
+  background-image: -ms-linear-gradient(top, #f72525, #b52222);    
+  background-image: -o-linear-gradient(top, #f72525, #b52222);    
+  background-image: linear-gradient(to bottom, #f72525, #b52222);    
+  }    
+  h2{    
+  margin:20px;    
+  font-size:14px;    
+  }    
+  h3{    
+  color:#A9A6A6;    
+  margin:10px auto;    
+  }    
+  #hidden_div img{    
+  margin:5px;    
+  border: solid #C8312B 3px;    
+  }    
+  #sorry{    
+  width:200px;    
+  height:3opx;    
+  margin:10px auto;    
+  padding:10px;    
+  background:#BA2020;    
+  border: dashed #7E1313 2px;    
+  color:#fff;    
+  }    
+  #iam{    
+  margin:50px auto;    
+  color:#1a1a1a;    
+  }    
+  .imgSizing{
+		max-height:80%;
+		max-width:80%;
+	}
+	.adspacebytechnicalarp{padding:2em;box-shadow:0 5px 15px rgba(0,0,0,.16);border-radius:5px;margin-top:1em;background:#fff;text-align:left}
+ -->    
+	.adspacebytechnicalarp{padding:2em;box-shadow:0 5px 15px rgba(0,0,0,.16);border-radius:5px;margin-top:1em;background:#fff;text-align:left}
+  </style>    
+	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js' type='text/javascript'></script>
+  </head>    
+  <body class=" text-center">    
+  <div id='hd'>    
+  <br>
+  <img alt='Twitter video downloader' src='https://www.pngall.com/wp-content/uploads/2016/07/Twitter-Download-PNG.png' 
+  title='High Quality Twitter Video Downloader' width="150px"/>    
+  <h1>All type Twitter Video Downloader</h1>    
+  <p>Twitter Video Downloader automatically take "High Quality" Video File from Twitter URL. Paste Your Twitter Video URL (<span>https://twitter.com/i/status/1419278257841573888</span>) in the below box and Click on "Download" button. Within Second it will generate your Twitter Video Download Button.</p>    
+  </div>    
+  <div class="addthis_inline_share_toolbox centersocials"></div>    
+
+  <div class="adspacebytechnicalarp container">    
+   Place Ad Code 1     
+    </div>    
+   </br>
+	<div class="Container text-center">
+		<a href="#use" data-toggle="modal" data-target="#use" >Know How to Use?</a> 
+	</div>
+
+
+<iframe src="https://mp3downy.com/twitter-video-downloader?apikey=&color=17a2b8&bg=ffffff" style="width:100%;min-height:250px;height:auto;" ></iframe>
+
+  <div class="adspacebytechnicalarp container">    
+   Place Ad Code 2     
+    </div>    
+  <div id='hidden_div' style='display:none'>    
+  <div id='thumbnails'>    
+  </div>    
+  </div>    
+  <!-- Add this Sticky Sidebar and Inline Share - By Technical Arp Login to Addthis and Change as per your Requirement-->    
+  <script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c98f50a092025d4"></script>    
+<!-- CONTACT US -->
+    <div id="contactus" class="modal fade technicalarpModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header alert-success">
+                    <h4 class="modal-title">Contact Us</h4>
+                    <button aria-hidden="true" data-dismiss="modal" class="close" type="button">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>Write Contact Us Information</p>
+                </div>
+                <div class="modal-footer">
+                    <button data-dismiss="modal" class="btn btn-default" type="button">Close</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- / CONTACT US -->
+
+<!-- HOW TO US -->
+    <div id="use" class="modal fade technicalarpModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header alert-success">
+                    <h4 class="modal-title">How to Use</h4>
+                    <button aria-hidden="true" data-dismiss="modal" class="close" type="button">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>Open Twitter video</p>
+                     <p>Copy Video Address/Link</p>
+                     <p>Paste Link in below form</p>
+                     <p>Click on Download! - Ready! - Download from available options</p>
+                </div>
+                <div class="modal-footer">
+                    <button data-dismiss="modal" class="btn btn-default" type="button">Close</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- / CONTACT US -->
+
+
+    <!-- PRIVACY -->
+    <div id="privacy" class="modal fade technicalarpModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-warning">
+                    <h4 class="modal-title">PRIVACY POLICY</h4>
+                    <button aria-hidden="true" data-dismiss="modal" class="close" type="button">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>PRIVACY POLICY Text Write Down</p>
+                </div>
+                <div class="modal-footer">
+                    <button data-dismiss="modal" class="btn btn-default" type="button">close</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- / PRIVACY -->
+
+    <!-- ABOUT US -->
+    <div id="aboutus" class="modal fade technicalarpModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-primary">
+                    <h4 class="modal-title">ABOUT US</h4>
+                    <button aria-hidden="true" data-dismiss="modal" class="close" type="button">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>Twitter Video Downloader by technical arp</p>
+                </div>
+                <div class="modal-footer">
+                    <button data-dismiss="modal" class="btn btn-default" type="button">close</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- / ABOUT US -->
+    
+    <!-- TERMOFUSE -->
+    <div id="termsofuse" class="modal fade technicalarpModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header alert-warning">
+                    <h4 class="modal-title">TERM OF USE</h4>
+                    <button aria-hidden="true" data-dismiss="modal" class="close" type="button">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>TERM OF USE INFORMATION IF YOU WANT TO REMOVE IT JUST REMOVE CODE</p>
+                </div>
+                <div class="modal-footer">
+                    <button data-dismiss="modal" class="btn btn-default" type="button">close</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- / TERMOFUSE -->
+
+<footer  style="margin-top:30px; margin-bottom:20px;">
+
+	<div class="Container text-center mb-10">
+		<a href="#privacy" data-toggle="modal" data-target="#privacy" >Privacy Policy </a> | 
+		<a href="#termsofuse" data-toggle="modal" data-target="#termsofuse" >Terms of Use</a> | 
+		<a href="#aboutus" data-toggle="modal" data-target="#aboutus" >About Us </a> | 
+		<a href="#contactus" data-toggle="modal" data-target="#contactus" >Contact Us</a>
+	</div>
+
+	<div class='container text-center'>
+		<div class='footer-copy'>
+			<p>&#169; <script>document.write(new Date().getFullYear())</script>
+			<span>&#8226; </span>
+			<b>
+			<a href='/' itemprop='name' title='Technical Arp'>WebsiteName - Twitter Video Downloader</a></b></p>
+			</br>
+			</br>
+		<!-- Edited by Technical Arp Team Visit: www.technicalarp.com-->
+		</div>
+	</div>
+</footer>
+
+
+  </body>    
+  </html>
